@@ -25,3 +25,7 @@ dis = new DataInputStream(new ByteArrayInputStream(bytes));
 data = LPPDataFactory.createMsg(dis, new IntegerHolder());
 data.dump();
 ```
+
+## Converting the gradle build
+-  install build
+-  run gradle inits
