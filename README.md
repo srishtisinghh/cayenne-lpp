@@ -26,6 +26,9 @@ data = LPPDataFactory.createMsg(dis, new IntegerHolder());
 data.dump();
 ```
 
-## Converting the gradle build
--  install build
--  run gradle inits
+## Converting to gradle build
+ 1. Edit pom.xml file at lines 48 and 49 to change 1.6 to 1.7. This fixes the maven build problem. 
+ 1. Run the gradle –v command into the project's root directory. This will check if gradle is properly installed. 
+ 1. Run gradle init in the directory containing the (master) pom.xml
+ 1. Run gradle build in the directory containing build.gradle files.
+ 1. After a few seconds, “BUILD SUCCESSFUL” indicates that the build has completed.
